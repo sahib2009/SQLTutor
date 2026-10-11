@@ -1,17 +1,52 @@
-# Compiled class file
+# ==========================================
+# NetBeans & Java .gitignore
+# SQL Tutor - Grade 11 IT PAT Project
+# ==========================================
+
+# Compiled Java class files
 *.class
 
-# Log file
+# Maven build directory (compiled classes and reports)
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# NetBeans user private settings and build folders
+**/nbproject/private/
+**/nbproject/project.properties.private
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Runtime student working databases and test data
+users/
+
+# Log and crash dump files
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
+# Backup and temporary files
+*.bak
+*.tmp
+*~
+*.swp
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# OS generated metadata
+.DS_Store
+Thumbs.db
 
-# Package Files #
-*.jar
+# Other IDE configs (IntelliJ / VS Code)
+.idea/
+*.iml
+.vscode/
+
+# Archive and package files
 *.war
 *.nar
 *.ear
@@ -19,6 +54,8 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Output application executable jar
+SQLTutor.jar
+
+# Keep the bundled UCanAccess library jar needed for the project
+!ucanaccess-5.1.8-uber.jar
